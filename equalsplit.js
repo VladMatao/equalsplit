@@ -267,10 +267,10 @@ function scavenge() {
 
         time = hours * 3600;
         haul = ((time / duration_factor - duration_initial_seconds) ** (1 / (duration_exponent)) / 100) ** (1 / 2);
-        haul1 = haul;
-        haul2 = haul;
-        haul3 = haul;
-        haul4 = haul;
+        haul1 = haul / 0.1;
+        haul2 = haul / 0.25;
+        haul3 = haul / 0.5;
+        haul4 = haul / 0.75;
         totalHaul = haul1 + haul2 + haul3 + haul4;
 
     }
